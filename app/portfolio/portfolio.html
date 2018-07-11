@@ -1,30 +1,24 @@
 <div class="col-md-12" ng-controller="PortfolioCtrl">
-   <!-- Navigation -->
-   <nav class="navbar navbar-default navbar-fixed-top"> 
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">My_Design</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <h1><a class="navbar-brand" href="index.html">My Portfolio</a></h1>
-        </div> 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right cl-effect-15">
-                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                <li class="hidden"><a class="page-scroll" href="#page-top"></a>	</li>
-                <li><a class="page-scroll scroll" href="#/home">Home</a></li>
-                <li><a class="page-scroll scroll" href="#/about">About</a></li>
-                <li><a class="page-scroll scroll" href="#/skills">Skills</a></li>
-                <li><a class="page-scroll scroll" href="#education">Education & Experience </a></li>
-                <li><a class="page-scroll scroll" href="#portfolio">Portfolio</a></li>
-                <li><a class="page-scroll scroll" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    <!-- /.container -->
-</nav> 
+  <ng-include src= "'headernav'"></ng-include>
+  <!-- contact -->
+<div class="contact" id="contact">
+        <div class="container">
+            <div class="col-md-6 contact-left">
+                <h3 data-aos="zoom-in" >contact me</h3>
+                    <p>Working Hours 8:00-17:00.<br>MONDAY-FRIDAY</p>
+                <form action="#" method="post">
+                        <div class="col-md-6 agileits_agile_about_mail_left">
+                            <input type="text" name="Name" placeholder="Name" contact-me-form-directive inptval="testVal" required="">
+                            <input type="text" name="Subject" placeholder="Company Name" required="">
+                        </div>
+                        <div class="col-md-6 agileits_agile_about_mail_left">
+                            <input type="email" name="Email" placeholder="Email" required="">
+                            <input type="text" name="Phone" placeholder="Phone" required="">
+                        </div>
+                    <div class="clearfix"> </div>
+                    <textarea  name="Message" placeholder="Message..." required=""></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+                     </div>
 
 </div>
